@@ -3,7 +3,8 @@ const router = express.Router();
 const pool = require('../database');
 
 router.get('/', (req, res) => {
-    res.render('login');
+    res.render('login', 
+    {layout: 'main_register'} );
 });
 
 

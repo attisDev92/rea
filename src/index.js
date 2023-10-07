@@ -8,7 +8,11 @@ const app = express();
 
 //settings 
 app.set('port', process.env.PORT || 4000);
+
+//render handlebars
 app.set('views', path.join(__dirname, 'views'));
+
+//tamplate main
 app.engine('hbs', engine({
     extname: '.hbs',
     defaultLayout: 'main',
@@ -16,6 +20,14 @@ app.engine('hbs', engine({
     partialsDir: path.join(__dirname, 'views/partials')
 }));
 app.set('view engine', 'hbs');
+
+//template register
+app.engine('hbs_register', engine({
+    extname: '.hbs',
+    defaultLayout:'main_register',
+    layoutsDir: path.join(__dirname, 'views/layouts'),
+    partialsDir:path.join(__dirname, 'views/partials')
+}));
 
  //middlewares
 app.use(morgan('dev'));

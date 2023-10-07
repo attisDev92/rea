@@ -1,1 +1,20 @@
-<h1>hola register</h1>
+ <main class="contenedor__formulario">
+    <form class="login__formulario" action="" method="post" onsubmit="return validarFormulario()">
+        <fieldset>
+            <legend class="formulario__titulo">Registro de usuario</legend>
+
+            <label for="mail-usuario" class="texto__formulario">Ingrese su correo electrónico
+            <input type="email" name="mail" id="mail-usuario" placeholder="correo electrónico">
+            <p class="alert" id="mensaje-alert-mail" style="display: none">Revise que el mail sea valido y esté bien escrito.</p>
+            <p class="notas">Este mail será la única forma de ingresar a su cuenta de usuario.</p>
+
+            <label for="pass" class="texto__formulario">Ingrese su contraseña</label>
+            <input type="password" name="pass" id="pass" placeholder="Contraseña">
+            <p class="alert" id="mensaje-alert-pass" style="display: none">Revise que el password tenga el mínimo de caracteres y cumpla con tener una letra mayúscula, un número y un carácter especial.</p>
+            <p class="notas">Debe tener un mínimo de 8 caracteres y como mínimo debe contener un número, una mayúscula y un caractér especial.</p>
+
+            <input id="btn-registrar" class="btn" type="submit" value="Registrar usuario">
+
+        </fieldset>
+    </form>
+</main>
