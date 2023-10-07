@@ -31,6 +31,7 @@ app.use((req, res, next) => {
 app.use(require('./routes'));
 app.use(require('./routes/autentication'));
 app.use('/register', require('./routes/register'));
+app.use('/login', require('./routes/login'));
 
 
 //Public
