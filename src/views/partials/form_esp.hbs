@@ -1,0 +1,136 @@
+<form action="/register/espacio" method="POST" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Información general del espacio</legend>
+
+        <label for="nombre-esp"></label>
+        <input type="text" name="nombre-esp" id="nombre-esp" placeholder="Centro de Arte ...">
+
+        <label for="dir-espacio">Dirección del espacio</label>
+        <input type="text" name="dir-espacio" id="dir-espacio" placeholder="Av. Principal y Calle Secundaria">
+
+        <label for="ciudad-esp">Ciudad donde se encuentra el espacio</label>
+        <input type="text" name="ciudad-esp" id="ciudad-esp" placeholder="ejem: Cuenca, Guayquil, Quito">
+
+        <label>Provincia</label>
+        <select name="provincia-esp" id="provincia-esp">
+            <option value="">Selecciona una provincia</option>
+            <option value="azuay">Azuay</option>
+            <option value="bolivar">Bolívar</option>
+            <option value="canar">Cañar</option>
+            <option value="carchi">Carchi</option>
+            <option value="chimborazo">Chimborazo</option>
+            <option value="cotopaxi">Cotopaxi</option>
+            <option value="el-oro">El Oro</option>
+            <option value="esmeraldas">Esmeraldas</option>
+            <option value="galapagos">Galápagos</option>
+            <option value="guayas">Guayas</option>
+            <option value="imbabura">Imbabura</option>
+            <option value="loja">Loja</option>
+            <option value="los-rios">Los Ríos</option>
+            <option value="manabi">Manabí</option>
+            <option value="morona-santiago">Morona Santiago</option>
+            <option value="napo">Napo</option>
+            <option value="orellana">Orellana</option>
+            <option value="pastaza">Pastaza</option>
+            <option value="pichincha" selected>Pichincha</option>
+            <option value="santa-elena">Santa Elena</option>
+            <option value="santo-domingo-de-los-tsam">Santo Domingo de los Tsáchilas</option>
+            <option value="sucumbios">Sucumbíos</option>
+            <option value="tungurahua">Tungurahua</option>
+            <option value="zamora-chinchipe">Zamora Chinchipe</option>
+        </select>
+
+        <button class="btn form__btn--siguiente">Siguiente</button>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Informacion técnica del espacio</legend>
+
+        <label for="descripcion-esp">Descripción del Espacio</label>
+        <textarea type="text" name="descripcion-esp" id="descripcion-esp">Breve descripción del espacio y las actividades que ejecuta</textarea>
+
+        <label for="tipo_espacio">Tipo de espacio</label>
+        <select name="tipo-espacio" id="tipo-espacio">
+            <option value="Centro cultural">Centro cultural</option>
+            <option value="Galería">Galería</option>
+            <option value="Universidad">Universidad</option>
+            <option value="Casade la cultura">Casa de la cultura</option>
+            <option value="Café-arte">Café Arte</option>
+            <option value="escuela o colegio">Escuela o Colegio</option>
+        </select>
+
+        <label for="aforo-esp">Aforo del espacio</label>
+        <input type="number" name="aforo-esp" id="aforo-esp">
+
+        <p for="equipo-proyect">Equipo de proyección</p>
+        <input type="checkbox" name="equipoProyeccion[]" value="proyector" id="proyector">
+        <label for="proyector">Proyector</label>
+        <input type="checkbox" name="equipoProyeccion[]" value="televisión" id="televisión">
+        <label for="televisión">Televisión</label>
+        <input type="checkbox" name="equipoProyeccion[]" value="pantalla" id="pantalla">
+        <label for="pantalla">pantalla</label>
+        <input type="checkbox" name="equipoProyeccion[]" value="otro" id="otro">
+        <label for="otro">Otro</label>
+        
+        <p for="equipo-proyect">Equipo de reproducción</p>
+        <input type="checkbox" name="equipoReproductor[]" value="DVD" id="DVD">
+        <label for="DVD">DVD</label>
+        <input type="checkbox" name="equipoReproductor[]" value="BluRay" id="BluRay">
+        <label for="BluRay">BluRay</label>
+        <input type="checkbox" name="equipoReproductor[]" value="Formato digital" id="Formato-digital">
+        <label for="Formato-digital">Formato digital</label>
+    
+        <label for="equipo-audio">Equipo de Audio</label>
+        <input type="text" name="equipo-audio" id="equipo-audio" placeholder="Equipode audio Dolby5.1">
+
+        <label for="otros-servicios">Otros Servicio</label>
+        <input type="text" name="otros-servicios" id="otros-servicios" placeholder="ejm: cafetería, tienda artesanal, etc">
+
+        <select name="publico-privado" id="publico-privado">
+            <option value="publico">Público</option>
+            <option value="privado">Privado</option>
+        </select>
+
+        <button class="btn form__btn--siguiente">Siguiente</button>
+     
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos del responsable de la sala</legend>
+
+        <label for="resp-espacio">Nombre y Apellido del responsalbe de la sala o espacio</label>
+        <input type="text" name="resp-espacio" id="resp-espacio" placeholder="Nombre Apellido">
+
+        <label for="cargo-esp">Cargo del responsable de la sala</label>
+        <input type="text" name="resp-espacio" id="resp-espacio" placeholder="programador, administrador, etc">
+
+        <label for="mial-espacio">Correo electrónico</label>
+        <input type="email" name="mail-espacio" id="mail-espacio" placeholder="centrodearte@mail.com">
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Documentos</legend>
+
+        <label for="img-logo-esp">Logo del espacio</label>
+        <input type="file" name="img-logo-esp" id="img-logo-esp">
+
+        <label for="foto-esp1">Foto del espacio - vista general</label>
+        <input type="file" name="foto-esp[]" id="foto-esp1">
+
+        <label for="foto-esp2">Foto del espacio - butacas</label>
+        <input type="file" name="foto-esp[]" id="foto-esp2">
+
+        <label for="foto-esp3">Foto del espacio - pantalla</label>
+        <input type="file" name="foto-esp[]" id="foto-esp3">
+
+        <label for="img-autorizacion-esp">Documento de nombrameinto o autorización</label>
+        <input type="file" name="img-autorizacion-esp" id="img-autorizacion-esp">
+
+        <input type="submit" class="btn form__btn--enviar" value="Enviar registro" id="submit-form-gest">
+    </fieldset>
+
+</form>

@@ -1,0 +1,81 @@
+<form action="/register/natural" method="Post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="cedula">Cédula</label>
+        <input type="number" name="cedula" id="cedula" placeholder="1711111111">
+
+        <label for="nombre-nat">Nombre</label>
+        <input type="text" name="nombre-nat" id="nombre-nat" placeholder="primer y segundo nombre">
+
+        <label for="apellido-nat">Apellido</label>
+        <input type="text" name="apellido-nat" id="apellido-nat" placeholder="primery segundo apellido">
+    
+        <button class="btn form__btn--siguiente">Siguiente</button>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos Personales</legend>
+
+        <label for="cel-natural">Celular</label>
+        <input type="tel" name="cel-natural" id="cel-natural" placeholder="0911111111">
+
+        <label for="telf-natural">Teléfono</label>
+        <input type="tel" name="telf-natural" id="telf-natural" placeholder="0211111111">
+
+        <label for="dir-natural">Dirección</label>
+        <input type="text" name="dir-natural" id="dir-natural" placeholder="Av. Principal y Calle Secundaria">
+
+        <label for="ciudad-nat">Ciudad</label>
+        <input type="text" name="ciudad-nat" id="ciudad-nat" placeholder="ejem: Cuenca, Guayquil, Quito">
+
+        <label>Provincia</label>
+        <select name="provincia-nat" id="provincia-nat">
+            <option value="">Selecciona una provincia</option>
+            <option value="azuay">Azuay</option>
+            <option value="bolivar">Bolívar</option>
+            <option value="canar">Cañar</option>
+            <option value="carchi">Carchi</option>
+            <option value="chimborazo">Chimborazo</option>
+            <option value="cotopaxi">Cotopaxi</option>
+            <option value="el-oro">El Oro</option>
+            <option value="esmeraldas">Esmeraldas</option>
+            <option value="galapagos">Galápagos</option>
+            <option value="guayas">Guayas</option>
+            <option value="imbabura">Imbabura</option>
+            <option value="loja">Loja</option>
+            <option value="los-rios">Los Ríos</option>
+            <option value="manabi">Manabí</option>
+            <option value="morona-santiago">Morona Santiago</option>
+            <option value="napo">Napo</option>
+            <option value="orellana">Orellana</option>
+            <option value="pastaza">Pastaza</option>
+            <option value="pichincha" selected>Pichincha</option>
+            <option value="santa-elena">Santa Elena</option>
+            <option value="santo-domingo-de-los-tsam">Santo Domingo de los Tsáchilas</option>
+            <option value="sucumbios">Sucumbíos</option>
+            <option value="tungurahua">Tungurahua</option>
+            <option value="zamora-chinchipe">Zamora Chinchipe</option>
+        </select>
+
+        <label for="img-dir-natural">Documento que respalde la dirección ingresada</label>
+        <input type="file" name="img-dir-natural" id="img-dir-natural">
+    
+        <button class="btn form__btn--siguiente">Siguiente</button>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Perfil</legend>
+
+        <label for="perfil-profesional">Perfil profesional</label>
+        <textarea name="perfil-profesional" id="perfi-profesional" cols="30" rows="10">Breve descripción de su trayectoria como gestor cultural y la clase de proyectos que realiza</textarea>
+
+        <input type="submit" class="btn form__btn--enviar" value="Enviar registro" id="submit-form-nat">
+
+    </fieldset>
+
+
+</form>

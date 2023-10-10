@@ -1,0 +1,82 @@
+<form action="/register/juridica" method="POST" enctype="multipart/form-data">
+    <fieldset class="">
+        <legend>Datos de la organización</legend>
+
+        <label for="ruc">Número de ruc</label>
+        <input type="number" name="ruc" id="ruc" placeholder="1111111111001">
+
+        <label for="nombre-comercial">Nombre de la organización</label>
+        <input type="text" name="nombre-comercial" id="nombre-comercial" placeholder="ejm: Instituto de ...">
+
+        <label for="telf-juridico"></label> 
+        <input type="tel" name="telf-juridico" id="telf-juridico" placeholder="021111111">
+
+        <label for="dir-juridico"></label>
+        <input type="text" name="dir-juridico" id="dir-juridico" placeholder="Av. Principal y Calle Secundaria">
+
+        <label for="ciudad-jur">Ciudad</label>
+        <input type="text" name="ciudad-jur" id="ciudad-jur" placeholder="ejem: Cuenca, Guayquil, Quito">
+
+        <label>Provincia</label>
+        <select name="provincia-jur" id="provincia-jur">
+            <option value="">Selecciona una provincia</option>
+            <option value="azuay">Azuay</option>
+            <option value="bolivar">Bolívar</option>
+            <option value="canar">Cañar</option>
+            <option value="carchi">Carchi</option>
+            <option value="chimborazo">Chimborazo</option>
+            <option value="cotopaxi">Cotopaxi</option>
+            <option value="el-oro">El Oro</option>
+            <option value="esmeraldas">Esmeraldas</option>
+            <option value="galapagos">Galápagos</option>
+            <option value="guayas">Guayas</option>
+            <option value="imbabura">Imbabura</option>
+            <option value="loja">Loja</option>
+            <option value="los-rios">Los Ríos</option>
+            <option value="manabi">Manabí</option>
+            <option value="morona-santiago">Morona Santiago</option>
+            <option value="napo">Napo</option>
+            <option value="orellana">Orellana</option>
+            <option value="pastaza">Pastaza</option>
+            <option value="pichincha" selected>Pichincha</option>
+            <option value="santa-elena">Santa Elena</option>
+            <option value="santo-domingo-de-los-tsam">Santo Domingo de los Tsáchilas</option>
+            <option value="sucumbios">Sucumbíos</option>
+            <option value="tungurahua">Tungurahua</option>
+            <option value="zamora-chinchipe">Zamora Chinchipe</option>
+        </select>
+
+        <button class="btn form__btn--siguiente">Siguiente</button>
+
+    </fieldset>
+    
+    <fieldset>
+        <legend>Datos Representante Legal</legend>
+
+        <label for="nombre-representante">Nombre</label>
+        <input type="text" name="nombre-representante" id="nombre-representante" placeholder="primer y segundo nombre">
+
+        <label for="apellido-representante"></label>
+        <input type="text" name="apellido-representante" id="apellido-representante" placeholder="primer y segundo apellido">
+
+        <label for="cel-jur"></label>
+        <input type="tel" name="cel-jur" id="cel-jur" placeholder="0911111111">
+    
+        <button class="btn form__btn--siguiente">Siguiente</button>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Documentos personería juridica</legend>
+
+        <label for="img-ruc"></label>
+        <input type="file" name="img-ruc" id="img-ruc">
+
+        <label for="img-dir-juridico">Documento que respalde la dirección ingresada</label>
+        <input type="file" name="img-dir-juridico" id="img-dir-juridico">
+
+        <input type="submit" class="btn form__btn--enviar" value="Siguiente" id="submit-form-jur">
+
+    </fieldset>
+
+</form>

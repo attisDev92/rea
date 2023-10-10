@@ -1,0 +1,25 @@
+<form action="/register/gestor" method="POST" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Información Usuario del Banco de Contenidos</legend>
+
+        <label for="proyecto-usuario">Proyecto de exhibición</label>
+        <textarea name="proyecto-usuario" id="proyecto-usuario" cols="30" rows="10">Describa su proyecto de exhibición y como será el uso de las obras del banco decontenidos</textarea>
+
+         <button class="btn form__btn--siguiente">Siguiente</button>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Documentos</legend>
+
+        <label for="img-logo-gest">Logo o foto del gestor</label>
+        <input type="file" name="img-logo-gest" id="img-logo-gest">
+
+        <label for="img-autorizacion-gest">Documento de nombrameinto o autorización (Solo en caso de personas jurídicas)</label>
+        <input type="file" name="img-autorizacion-gest" id="img-autorizacion-gest">
+
+        <input type="submit" class="btn form__btn--enviar" value="Enviar registro" id="submit-form-gest">
+    </fieldset>
+
+</form>
