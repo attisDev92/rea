@@ -40,28 +40,21 @@ body {
 	height: 100vh;
 }
 
+/* barra de navegacion */
+
 nav {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
 	width: 100%;
-	height: 2rem;
+	height: 3rem;
 }
 
 .logos {
+	display: inline-block;
+	height: 2rem;
 	width: auto;
-	height: 100%;
-	margin: 1em 2em;
+	margin-left: 3rem;
 }
 
-.logos img {
-	width: 100%;
-	height: 100%;
-}
+/* main */
 
 .contenedor__formulario {
 	background-color: var(--color-gris-claro);
@@ -169,6 +162,7 @@ nav {
 .header__registro {
 	position: fixed;
 	width: 100%;
+	height: fit-content;
 	background-color: var(--color-negro);
 	z-index: 10;
 }
@@ -192,9 +186,8 @@ nav {
     box-sizing: border-box;
     padding: 2em;
     box-shadow: var(--sombra-box);
-    width: 50%;
-    height: 15em;
-    margin: 1em 2em;
+    height: 15rem;
+	min-height: fit-content;
 	transition: all 0.3s ease;
 }
 
@@ -216,7 +209,7 @@ nav {
 }
 
 .btn--superior:hover p {
-	display: block;
+	display: grid;
 	font-size: 1.3em;
 }
 

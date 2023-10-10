@@ -19,6 +19,7 @@ app.engine('hbs', engine({
     layoutsDir: path.join(__dirname, 'views/layouts'),
     partialsDir: path.join(__dirname, 'views/partials')
 }));
+
 app.set('view engine', 'hbs');
 
 //template register

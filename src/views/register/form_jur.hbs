@@ -1,0 +1,42 @@
+<form action="/register/juridica" method="POST">
+    <fieldset class="">
+        <legend>Datos de la organización</legend>
+
+        <label for="ruc">Número de ruc</label>
+        <input type="number" name="ruc" id="ruc">
+
+        <label for="nombre-comercial">Nombre de la organización</label>
+        <input type="text" name="nombre-comercial" id="nombre-comercial">
+
+        <label for="dir-juridico"></label>
+        <input type="text" name="dir-juridico" id="dir-juridico">
+    </fieldset>
+
+    <button class="btn form__btn--siguiente">Siguiente</button>
+    
+    <fieldset>
+        <legend>Datos Representante Legal</legend>
+
+        <label for="nombre-representante">Nombre</label>
+        <input type="text" name="nombre-representante" id="nombre-representante">
+
+        <label for="apellido-representante"></label>
+        <input type="text" name="apellido-representante" id="apellido-representante">
+
+        <label for="cel-jur"></label>
+        <input type="number" name="cel-jur" id="cel-jur">
+    </fieldset>
+
+    <button class="btn form__btn--siguiente">Siguiente</button>
+
+    <fieldset>
+        <legend>Documentos personería juridica</legend>
+
+        <label for="img-ruc"></label>
+        <input type="file" name="img-ruc" id="img-ruc">
+
+    </fieldset>
+
+    <button class="btn form__btn--enviar">Siguiente</button>
+
+</form>
