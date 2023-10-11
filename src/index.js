@@ -45,6 +45,7 @@ app.use(require('./routes'));
 app.use(require('./routes/autentication'));
 app.use('/register', require('./routes/register'));
 app.use('/login', require('./routes/login'));
+app.use('/admin', require('./routes/admin'));
 
 
 //Public

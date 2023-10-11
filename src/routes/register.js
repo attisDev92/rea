@@ -3,7 +3,7 @@ const router = express.Router();
 const pool = require('../database');
 
 //registro user
-router.get('/register', (req, res) => {
+router.get('/', (req, res) => {
     res.render('register/register',
     {layout: 'main_register'});
 });

@@ -4,7 +4,7 @@ const pool = require('../database');
 
 //ingreso login
 router.get('/', (req, res) => {
-    res.render('login', 
+    res.render('rea_statics/login', 
     {layout: 'main_register'} );
 });
 

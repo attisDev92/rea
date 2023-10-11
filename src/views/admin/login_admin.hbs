@@ -1,0 +1,17 @@
+<main class="contenedor__formulario row">
+    <form class="login__formulario col" action="" method="post" onsubmit="return validarFormulario()">
+        <fieldset>
+            <legend class="formulario__titulo">Administrador REA</legend>
+
+            <input type="mail" name="usuario" id="usuario" placeholder="Correo electrónico">
+            <p class="alert" id="mensaje-alert-usuario" style="display: none">Este correo ya se encuentra registrado.</p>
+
+            <input type="password" name="password" id="password" placeholder="Contraseña">
+            <p class="alert" id="mensaje-alert-pass" style="display: none">La contraseña es incorrecta.</p>
+
+            <input class="btn" type="submit" value="Ingresar">
+
+
+        </fieldset>
+    </form>
+</main>
