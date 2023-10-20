@@ -214,9 +214,9 @@ footer {
 }
 /* banner slider */
 
-.carrusel__contenedor {
-	width: 100%;
-	height: 100%;
+.carrusell__contenedor {
+	width: 100vh;
+	height: 100vh;
 }
 
 .contenedor__imagenes {
@@ -230,7 +230,8 @@ footer {
 }
 
 .img {
-	height: 100vh;
+	height: 100%;
+	width: 100%;
 	overflow: auto;
 }
 

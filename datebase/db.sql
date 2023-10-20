@@ -13,6 +13,13 @@ CREATE TABLE
         `idusers` INT NOT NULL AUTO_INCREMENT UNIQUE,
         `mail` VARCHAR(100) NOT NULL UNIQUE,
         `password` VARCHAR(100) NOT NULL,
+        `salt` VARCHAR(100) NOT NULL,
+        `autenticar` BOOLEAN,
+        `juridico` BOOLEAN,
+        `natural` BOOLEAN,
+        `espacio` BOOLEAN,
+        `gestor` BOOLEAN,
+        `valid` BOOLEAN,
         `created_at` TIMESTAMP NOT NULL DEFAULT current_timestamp
     );
 
@@ -156,6 +163,7 @@ CREATE TABLE
         `proyecto` BOOLEAN NOT NULL,
         `url_nombramiento_autorizacion` BOOLEAN NOT NULL,
         `url_fotogestor_logo` BOOLEAN NOT NULL,
+        `Acuerdo` BOOLEAN,
         PRIMARY KEY (`idbc_valid`),
         FOREIGN KEY (`idusers`) REFERENCES `users`(`idusers`)
     );
@@ -186,6 +194,7 @@ CREATE TABLE
         `url_fotos_espacios` BOOLEAN NOT NULL,
         `url_nombramiento_autorizacion` BOOLEAN NOT NULL,
         `url_log` BOOLEAN NOT NULL,
+        `Acuerdo` BOOLEAN,
         PRIMARY KEY (`idespacio_valid`),
         FOREIGN KEY (`idusers`) REFERENCES `users`(`idusers`)
     );

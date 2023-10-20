@@ -9,15 +9,13 @@ router.get('/', (req, res) => {
 });
 
 //ruta para vista de calidación
-routes.get('/valid', (req, res) => {
+router.get('/valid', (req, res) => {
     res.render('admin/valid');
 });
-
 
 //envio de datos login admin
 router.post('/', (req, res) => {
     res.send('enviado login admin')
 });
-
 
 module.exports = router;
